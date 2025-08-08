@@ -1,3 +1,10 @@
+body {
+  background: #111;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #eee;
+}
+
 .mines-container {
   display: flex;
   gap: 30px;
@@ -50,6 +57,7 @@
   border: 2px solid #333;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.2s ease;
 }
 
 .tile.unrevealed:hover {
