@@ -1,0 +1,16 @@
+<body>
+  <div id="header-container"></div>
+  <main id="main-content">
+    <!-- Page content here -->
+  </main>
+  <div id="chat-box" class="hidden">Chat goes here</div>
+
+  <script>
+    fetch("components/header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-container").innerHTML = data;
+      });
+  </script>
+  <script src="scripts/chat.js"></script>
+</body>

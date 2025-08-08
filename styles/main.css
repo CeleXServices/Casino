@@ -1,53 +1,67 @@
-.auth-page {
-  background: #111;
+.mines-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
-  color: #eee;
-}
-.auth-container {
-  background: #1e1e1e;
+  gap: 30px;
   padding: 30px;
+}
+
+.bet-controls {
+  width: 200px;
+  background: #222;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 20px #ffcc00;
-  width: 300px;
-  text-align: center;
+  border: 2px solid #ffcc00;
 }
-.auth-container h1 {
-  margin-bottom: 20px;
-  color: #ffcc00;
-}
-.auth-container input {
+
+.bet-controls input {
   width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
   background: #333;
-  color: #eee;
+  color: #fff;
+  border: none;
   border-radius: 5px;
 }
-.auth-container button {
-  width: 100%;
-  padding: 12px;
-  background: #ffcc00;
-  color: #111;
-  font-weight: bold;
+
+.bet-buttons button,
+.bet-controls button {
+  background: #444;
+  color: #ffcc00;
   border: none;
+  padding: 10px;
+  margin: 5px 2px;
   border-radius: 5px;
   cursor: pointer;
 }
-.google-btn, .steam-btn {
-  margin-top: 10px;
-  background: #555;
+
+.mines-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 10px;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tile.unrevealed:hover {
+  border-color: #ffcc00;
+}
+
+.tile.safe {
+  background: #2b2;
   color: #fff;
 }
-.divider {
-  margin: 15px 0;
-  border-bottom: 1px solid #444;
-}
-.switch {
-  margin-top: 15px;
-  font-size: 14px;
+
+.tile.mine {
+  background: #a00;
+  color: #fff;
 }
