@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Casino</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body class="auth-page">
+  <div class="auth-container">
+    <h1>📝 Create Account</h1>
+    <form id="register-form">
+      <input type="text" placeholder="Username" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="divider">or</div>
+
+    <div class="auth-providers">
+      <button class="google-btn">Register with Google</button>
+      <button class="steam-btn">Register with Steam</button>
+    </div>
+
+    <p class="switch">Already have an account? <a href="index.html">Login</a></p>
+  </div>
+
+  <script src="scripts/auth.js"></script>
+</body>
+</html>

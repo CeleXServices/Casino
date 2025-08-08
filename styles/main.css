@@ -1,0 +1,53 @@
+.auth-page {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #eee;
+}
+.auth-container {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ffcc00;
+  width: 300px;
+  text-align: center;
+}
+.auth-container h1 {
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  background: #333;
+  color: #eee;
+  border-radius: 5px;
+}
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background: #ffcc00;
+  color: #111;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.google-btn, .steam-btn {
+  margin-top: 10px;
+  background: #555;
+  color: #fff;
+}
+.divider {
+  margin: 15px 0;
+  border-bottom: 1px solid #444;
+}
+.switch {
+  margin-top: 15px;
+  font-size: 14px;
+}
